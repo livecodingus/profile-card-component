@@ -1,4 +1,82 @@
+/* ========== FUENTE ========== */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: tomato red;
-    /* background-color: tomato; */
+   background: hsl(185, 75%, 39%);
+   font-size: 18px;
+   font-family: 'Kumbh Sans', sans-serif;
+   font-weight: 400;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.background-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 100%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+}
+
+.bottom .user .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    color: hsl(229, 23%, 23%);
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+    padding: 15px 0px 0px 10px;
+}
+
+.city {
+    display: inline-block;
+    color: hsl(227, 10%, 46%);
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.social h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.social small {
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
 }
