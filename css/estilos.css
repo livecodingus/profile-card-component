@@ -8,19 +8,29 @@
 }
 
 body {
-   background: hsl(185, 75%, 39%);
-   font-size: 18px;
-   font-family: 'Kumbh Sans', sans-serif;
-   font-weight: 400;
+    background: hsl(185, 75%, 39%);
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.pg-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .card {
+    position: relative;
     background-color: #fff;
     border-radius: 10px;
+    /* sombra */
+    /* box-shadow: 3px 6px 3px rgba(0,0,0,0.3); */
+    box-shadow: 3px 3px 30px 10px hsl(185, 75%, 39%);
+    z-index: 20;
 }
 
 .background-img {
@@ -79,4 +89,27 @@ body {
 .social small {
     font-size: 14px;
     color: hsl(227, 10%, 46%);
+}
+
+/* ========== BACKGROUND SHAPE ========== */
+.bg-shape {
+    position: absolute;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.bg-shape.top-circle {
+    background-image: url('../images/bg-pattern-top.svg');
+    transform: translate(-35%, -60%);
+    top: -2rem;
+    left: 5rem;
+}
+
+.bg-shape.bottom-circle {
+    background-image: url('../images/bg-pattern-bottom.svg');
+    transform: translate(25%, 65%);
+    bottom: 1rem;
+    right: -3rem;
 }
